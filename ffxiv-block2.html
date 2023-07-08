@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ffxiv-blog.css">
     <title>Hub Sample Web-Design</title>
 </head>
 <body>
@@ -25,92 +26,89 @@
         </nav>
         <hr>
     </header>
-    <h1>Insert Title of Page</h1>
-    <form action="/form-handling-url" method="post" id="form-sheet">
-        <fieldset>
-            <legend>SAMPLE: RP Job Application</legend>
-                <div>
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="first_name">
-                </div>
-
-                <div>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="last_name">
-                </div>
-
-                <div>
-                    <label for="currentdate">Date:</label>
-                    <input type="date" id="currentdate" name="current_date">
-                </div>
-
-                <div class="options">
+    <h1>SAMPLE: Insert Title of Page</h1>
+    <div class="form-style-3">
+        <form action="/form-handling-url" method="post" id="canvas">
+            <fieldset>
+                <legend>SAMPLE: RP Job Application</legend>
                     <div>
-                        <label for="status">Role Preference</label>
-                        <select name="role-status" id="status">
-                            <p>Please Choose Your Most Preferred Role</p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div>
+                        <label for="currentdate">Date:</label>
+                        <input type="date" id="currentdate" name="current_date">
+                    </div>
+
+                    <div class="options">
+                        <div>
+                            <label for="status">Role Preference</label>
+                            <select name="role-status" id="status">
+                                <p>Please Choose Your Most Preferred Role</p>
+                                <option value=" ">--Choose One--</option>
+                                <option value="host">Host/Hostress</option>
+                                <option value="waiting">Waiter/Waitress</option>
+                                <option value="dancer">Dancer</option>
+                                <option value="bar">Bartender</option>
+                                <option value="manager">Manager</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="gender">Character's Gender</label>
+                        <select name="identity" id="gender">
                             <option value=" ">--Choose One--</option>
-                            <option value="host">Host/Hostress</option>
-                            <option value="waiting">Waiter/Waitress</option>
-                            <option value="dancer">Dancer</option>
-                            <option value="bar">Bartender</option>
-                            <option value="manager">Manager</option>
+                            <option value="she">She/Her</option>
+                            <option value="he">He/Him</option>
                         </select>
                     </div>
-                </div>
 
-                <div>
-                    <label for="gender">Character's Gender</label>
-                    <select name="identity" id="gender">
-                        <option value=" ">--Choose One--</option>
-                        <option value="she">She/Her</option>
-                        <option value="he">He/Him</option>
-                    </select>
-                  </div>
-
-                <div>
-                    <br>
-                    <label for="choice"></label>
-                    <input type="radio" id="race-hyur" name="hyur" value="race-hyur" class="hyur">
-                    <label for="race-hyur">Hyur</label>
-                    <br>
-                    <input type="radio" id="race-elezen" name="elezen" value="race-elezen" class="elezen">
-                    <label for="race-elezen">Elezen</label>
-                    <br>
-                    <input type="radio" id="race-miqote" name="miqo_te" value="race-miqote" class="miqo_te">
-                    <label for="race-miqote">Miqo'Te</label>
-                    <br>
-                    <input type="radio" id="race-lala" name="lala" value="race-lala" class="lala">
-                    <label for="race-lala">Lalafell</label>
-                    <br>
-                    <input type="radio" id="race-roe" name="roe" value="race-roe" class="roe">
-                    <label for="race-roe">Roegadyn</label>
-                    <br>
-                    <input type="radio" id="race-viera" name="viera" value="race-viera" class="viera">
-                    <label for="race-viera">Viera</label>
-                    <br>
-                    <input type="radio" id="race-hro" name="hro" value="race-hro" class="hro">
-                    <label for="race-hro">Hrothgar</label>
-                </div>
-
-                <div>
-                    <p>Required:</p>
-                    <div>
-                        <label for="comments" class="comments">Please write at least 5 sentences of a sample of your role-playing writing in terms of serving a guest (food or drink):</label>
-                        <textarea id="comments" name="comments" rows="3" cols="40"></textarea>
+                    <div class="among-us">
+                        <br>
+                        <label for="choice">Character's Race</label>
+                        <input type="radio" id="race-hyur" name="hyur" value="race-hyur" class="hyur">
+                        <label for="race-hyur">Hyur</label>
+                        <input type="radio" id="race-elezen" name="elezen" value="race-elezen" class="elezen">
+                        <label for="race-elezen">Elezen</label>
+                        <input type="radio" id="race-miqote" name="miqo_te" value="race-miqote" class="miqo_te">
+                        <label for="race-miqote">Miqo'Te</label>
+                        <input type="radio" id="race-lala" name="lala" value="race-lala" class="lala">
+                        <label for="race-lala">Lalafell</label>
+                        <input type="radio" id="race-roe" name="roe" value="race-roe" class="roe">
+                        <label for="race-roe">Roegadyn</label>
+                        <input type="radio" id="race-viera" name="viera" value="race-viera" class="viera">
+                        <label for="race-viera">Viera</label>
+                        <input type="radio" id="race-hro" name="hro" value="race-hro" class="hro">
+                        <label for="race-hro">Hrothgar</label>
                     </div>
 
-                <div class="check">
-                    <label for="signup">Signed up for Discord</label>
-                    <input type="checkbox" id="signup" name="sign_up" checked>
-                    <label for="termsandconditions">Agree to terms and conditions</label>
-                    <input type="checkbox" id="termsandconditions" name="terms_conditions" checked>
+                    <div>
+                        <div class="required">Required:
+                            <label for="comments" class="comments">Please write at least 5 sentences of a sample of your role-playing writing in terms of serving a guest (food or drink):</label>
+                            <textarea id="comments" name="comments" rows="3" cols="40"></textarea>
+                        </div>
+
+                    <div class="checkboxes">
+                        <label for="signup">Signed up for Discord</label>
+                        <input type="checkbox" id="signup" name="sign_up" checked>
+                        <label for="termsandconditions">Agree to terms and conditions</label>
+                        <input type="checkbox" id="termsandconditions" name="terms_conditions" checked>
+                    </div>
+                    <div>
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                    <div class="footer-form">
+                        <span>Don't have an account? <a href="">Sign up</a></span>
                 </div>
-                <div>
-                    <button type="submit" class="button">Submit</button>
-                </div>
-            </div>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
